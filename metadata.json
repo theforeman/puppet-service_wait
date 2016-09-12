@@ -1,6 +1,6 @@
 {
   "name": "katello-service_wait",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "author": "katello",
   "summary": "Puppet provider wrapping service resources making sure the service is really running",
   "license": "GPL-3.0+",
