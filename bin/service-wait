@@ -56,8 +56,17 @@ wait-for-url () {
 
 wait-for-port () {
    success=0
+   if which ss 2>&1 > /dev/null ; then
+       local cmd="ss -ln"
+   elif which netstat 2>&1 > /dev/null ; then
+       local cmd="netstat -ln"
+   else
+       # We can't really check if the port is available so we assume it's ok
+       return # SUCCESS
+   fi
+
    for i in $(seq 1 $WAIT_MAX); do
-       if netstat -ln | grep -q ":$1\s"; then
+       if $cmd | grep -q ":$1\s"; then
            return # SUCCESS
        else
            service-wait-sleep
