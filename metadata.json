@@ -4,9 +4,9 @@
   "author": "katello",
   "summary": "Puppet provider wrapping service resources making sure the service is really running",
   "license": "GPL-3.0+",
-  "source": "https://github.com/katello/puppet-service_wait",
-  "project_page": "https://github.com/katello/puppet-service_wait",
-  "issues_url": "https://github.com/katello/puppet-service_wait/issues",
+  "source": "https://github.com/theforeman/puppet-service_wait",
+  "project_page": "https://github.com/theforeman/puppet-service_wait",
+  "issues_url": "https://github.com/theforeman/puppet-service_wait/issues",
   "dependencies": [
     {
       "name": "puppetlabs-stdlib",
