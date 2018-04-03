@@ -1,4 +1,4 @@
-confine [ $SERVICE = 'mongod' ]
+confine [ $SERVICE = 'rh-mongodb34-mongod' ]
 
 # RHBZ 824405 - wait until service is avaiable
 service-wait () {
